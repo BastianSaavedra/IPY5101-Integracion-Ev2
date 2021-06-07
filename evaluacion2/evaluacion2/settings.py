@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'payments.apps.PaymentsConfig',
+    
+
 ]
 
 MIDDLEWARE = [
@@ -54,7 +57,7 @@ ROOT_URLCONF = 'evaluacion2.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,3 +126,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Stripe
+STRIPE_PUBLIC_KEY = "pk_test_51IySaZJFE0EkoXou6vLL3tVKjgqolxf1vOps2YRVlzaQQaXHSnJ694Tjac3GrIjdZ9LrQyO8nhQo8NPp1OThoQhD003hvIFuxH"
+STRIPE_SECRET_KEY = "sk_test_51IySaZJFE0EkoXouf6B3R98tZ5nclMbMOaYQdRlJBapfYTEbn3ZNiZeyCtbcQL56fThgS17Oy89mEaUiZnSQC20K00HpSIVz5y"
