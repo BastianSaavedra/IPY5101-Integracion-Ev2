@@ -1,4 +1,4 @@
-# IPY5101-Integracion-Ev2
+# Integracion de Stripe en Django
 
 Integración a una pasarela de pagos.
 
